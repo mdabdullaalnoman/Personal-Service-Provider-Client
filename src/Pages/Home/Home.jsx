@@ -1,7 +1,7 @@
 import React from 'react';
-import Footer from './Footer';
+import Footer from '../../SharedComponent/Footer';
+import Nav from '../../SharedComponent/Nav';
 import Hero from './Hero';
-import Nav from './Nav';
 
 const Home = () => {
     return (
