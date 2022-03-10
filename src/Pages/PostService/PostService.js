@@ -1,19 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import Footer from '../../SharedComponent/Footer';
 import Nav from '../../SharedComponent/Nav';
 
 const PostService = () => {
+    const { register, handleSubmit, reset } = useForm();
 
-    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    // submit data -----------------------------
     const onSubmit = data => {
 
+        fetch('http://localhost:5000/service', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.insertedId) {
+                    alert('service added success fully')
+                }
+                else{
+                    alert('some things went wrong')
+                }
+            })
+   
+       
+        
 
         reset();
         console.log(data)
     };
-    console.log(errors);
 
+    useEffect(() => {
+        console.log('noman');
+      });
 
     return (
         <div>
