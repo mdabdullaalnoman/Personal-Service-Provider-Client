@@ -1,18 +1,17 @@
 import React from 'react';
 import Footer from '../../SharedComponent/Footer';
 import Nav from '../../SharedComponent/Nav';
-import Hero from './Hero';
-import Service from './Service';
 
-const Home = () => {
+const AboutUs = () => {
     return (
         <div>
             <Nav />
-            <Hero />
-            <Service />
+            <div className="about">
+                <h1 className="text-center text-2xl py-5 text-blue-600"> About</h1>
+            </div>
             <Footer />
         </div>
     );
 };
 
-export default Home;
+export default AboutUs;
