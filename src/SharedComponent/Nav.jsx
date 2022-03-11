@@ -7,7 +7,7 @@ const Nav = () => {
         <div className="flex justify-between items-center  px-10 py-3 drop-shadow-lg text-lg bg-white  top-0 left-0 right-0">
             {/* ===============nav logo =================*/}
             <div className="nav-img ">
-                <img src={logo} alt="logo" className="h-16"/>
+                <img src={logo} alt="logo" className="h-16" />
             </div>
 
             {/* =============nav menu ==================*/}
@@ -16,6 +16,7 @@ const Nav = () => {
                 <Link className="px-3 hover:text-white" to="/service ">Service</Link>
                 <Link className="px-3 hover:text-white" to="/about">About</Link>
                 <Link className="px-3 hover:text-white" to="/contract">Contract</Link>
+                <Link className="px-3 hover:text-white" to="/dashboard/upcomingService">Dashboard</Link>
                 <Link className="px-3 hover:text-white" to="/postService">PostService</Link>
             </div>
 
