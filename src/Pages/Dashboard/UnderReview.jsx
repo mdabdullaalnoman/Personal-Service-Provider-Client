@@ -20,7 +20,7 @@ const UnderReview = () => {
                         <div className="content">
                             <p>{service.title}</p>
                             <button
-                                className="bg-green-500 px-5 py-3 hover:bg-green-900 text-white font-bold rounded-2xl">Review</button>
+                                className="bg-green-500 px-5 py-3 hover:bg-green-900 text-white font-bold rounded-2xl">Remove</button>
                         </div>
                     </div>
                 )
